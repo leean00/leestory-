@@ -3,9 +3,49 @@
 <head>
   <title>leesotry - 사진들</title>
   <meta charset="utf-8">
+  <style>
+    a{
+      color:black;
+      text-decoration: none;
+    }
+    #active{
+      color:red;
+    }
+    #grid{
+      display:grid;
+      grid-template-columns: 250px 1fr;
+    }
+    #article{
+      padding-left: 20px;
+    }
+    h1{
+      font-size=35px;
+      text-align:center;
+      border-bottom: 1px solid gray;
+      margin:0;
+      padding:15px;
+    }
+    #grid ol{
+      border-right: 1px solid gray;
+      margin:0;
+      padding:15px;
+      padding-left:33px;
+    }
+  </style>
 </head>
 <body>
-<h1>이쁜 사진들</h1>
-<img src="https://mimgnews.pstatic.net/image/108/2019/10/11/0002816275_001_20191011061733148.jpg?type=w540"width="20%">
+  <h1><a href="leestory.html">이동휘 일기장</a></h1>
+  <div id="grid">
+    <ol>
+      <li><a href="1.html">하루마다 기록하는 곳</a></li>
+      <li><a href="2.html">좋아하는 노래</a></li>
+      <li><a href="3.html" id ="active">이쁜 사진들</a></li>
+      <li><a href="4.html">여러가지 사이트</a></li>
+    </ol>
+    <div id="article">
+      <h2>이쁜 사진들</h2>
+      <img src="https://mimgnews.pstatic.net/image/108/2019/10/11/0002816275_001_20191011061733148.jpg?type=w540"width="20%">
+    </div>
+  </div>
 </body>
 </html>
